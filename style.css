@@ -360,8 +360,6 @@ span.text-content p {
   grid-row-gap: 1em;
   margin: 0 auto;
   font-family: futura-pt, sans-serif;
-  height:100vh;
-  
 }
 
 #aboutus {
@@ -392,6 +390,7 @@ span.text-content p {
 .headertext {
   grid-area: headertext;
   width: 75vw;
+  height:100vh;
   font-size: 60px;
   font-weight: 500;
   line-height: 90px;
