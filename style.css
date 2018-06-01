@@ -379,6 +379,8 @@ span.text-content p {
   margin-top: 25vh;  
 }
 
+/* THE ANIMATED HEADER*/
+
 .headertext {
   grid-area: headertext;
   width: 75vw;
@@ -389,8 +391,6 @@ span.text-content p {
   line-height: 90px;
   font-family: 'Playfair Display', serif;  
   height: 100vh;
-  color: red;
-
 }
 
 /* ANIMATION-*/
