@@ -55,9 +55,10 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "header"
+    "headertext"
     "hero"
     "portfolio"
     "aboutus";
@@ -350,16 +351,7 @@ span.text-content p {
 /* ================== ABOUT US SECTION =================== */
 
 #header {
-  grid-area: header; 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "headertext headertext";
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  margin: 0 auto;
-  font-family: futura-pt, sans-serif;
+  display: flex;
 }
 
 #aboutus {
@@ -390,12 +382,15 @@ span.text-content p {
 .headertext {
   grid-area: headertext;
   width: 75vw;
-  height:100vh;
+  margin-top: 30vh;
+  margin-left: 1em;
   font-size: 60px;
   font-weight: 500;
   line-height: 90px;
   font-family: 'Playfair Display', serif;  
-  align-self: center;
+  height: 100vh;
+  color: red;
+
 }
 
 /* ANIMATION-*/
