@@ -778,6 +778,10 @@ span.text-content p {
 
 @media only screen and (min-width: 375px) and (max-width: 768px){
   
+  #navlogo {
+    right: auto; 
+  }
+
   .BF {
     display: none;
   }
@@ -939,6 +943,10 @@ span.text-content p {
 /* Mobile */
 
 @media only screen and (min-width: 0px) and (max-width: 375px) {
+
+  #navlogo {
+    right: auto; 
+  }
 
   .BF {
     display: none;
