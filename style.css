@@ -350,9 +350,6 @@ span.text-content p {
 
 /* ================== ABOUT US SECTION =================== */
 
-#header {
-  display: flex;
-}
 
 #aboutus {
   grid-area: aboutus; 
@@ -373,10 +370,9 @@ span.text-content p {
 .leadtext {
   grid-area: leadtext;
   width: 60vw;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 34px;
-  margin-top: 25vh;  
+  font-size: 20px;
+  line-height: 30px;
+  align-self: center;
 }
 
 /* THE ANIMATED HEADER*/
@@ -385,12 +381,14 @@ span.text-content p {
   grid-area: headertext;
   width: 75vw;
   margin-top: 30vh;
+  margin-bottom: 30vh;
   margin-left: 1em;
   font-size: 60px;
   font-weight: 500;
+  color: #383838;
   line-height: 90px;
   font-family: 'Playfair Display', serif;  
-  height: 100vh;
+  
 }
 
 /* ANIMATION-*/
@@ -593,11 +591,10 @@ span.text-content p {
 #content {
   grid-area: aboutcontent;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
   grid-template-areas:
-    "leadtext leadtext"
-    "lefttext righttext";
+    "leadtext";
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   margin: 0 auto;
@@ -901,16 +898,14 @@ span.text-content p {
 
   #content {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 90vh;
     grid-template-areas:
-      "leadtext"
-      "lefttext" 
-      "righttext";
+      "leadtext";
   }
 
   .leadtext {
     width: 70vw;
-    margin-top: 18vh;
+    align-self: center;
   }
 
   .lefttext {
@@ -1064,7 +1059,7 @@ span.text-content p {
 
   .leadtext {
     width: 75vw;
-    margin-top: 10vh;
+    margin-top: 16vh;
   }
 
   .lefttext {
@@ -1101,6 +1096,10 @@ and (orientation : landscape) {
     top: 35%;
  }
 
+  .leadtext {
+    margin-top: 30vh;
+  }
+
 }
 
 /* Mobile iPhone5 Landscape (to shrink nav) */
@@ -1114,6 +1113,9 @@ and (orientation : landscape) {
     height: 50px;
   }
 
+  .leadtext {
+    margin-top: 45vh;
+  }
 }
 
 
