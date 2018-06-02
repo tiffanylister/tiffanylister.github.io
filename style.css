@@ -55,13 +55,14 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
     "header"
     "headertext"
     "hero"
     "portfolio"
-    "aboutus";
+    "aboutus"
+    "copyright";
 }
 
 /* ===================== HOME PAGE ===================== */
@@ -317,14 +318,11 @@ body {
   width: 50%;
 }
 
-#portfolio li{
-  transition: 0.5s ease;
-}
-
 #portfolio li:hover {
   background: #000;
   z-index: 9;
   text-align: center;
+  transition: 1s ease-in;
 }
 
 span.text-content {
@@ -363,8 +361,8 @@ span.text-content p {
   grid-row-gap: 1em;
   margin: 0 auto;
   font-family: futura-pt, sans-serif;
-  margin-top: 5vh;
-  margin-bottom: 15vh;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
 }
 
 .leadtext {
@@ -439,6 +437,7 @@ span.text-content p {
   width: 60vw;
   font-size: 20px;
   line-height: 30px;
+  font-weight: 500;
   text-align: center;
   margin-top: 2em;
 }
@@ -462,6 +461,18 @@ span.text-content p {
   width: 30vw;
   font-size: 20px;
   line-height: 30px;
+}
+
+#copyright {
+  grid-area: copyright;
+  position: relative; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: futura-pt, sans-serif;
+  padding-bottom: 2em;
 }
 
 /* ============ PROJECT IMAGE PAGES ============ */
@@ -548,32 +559,36 @@ span.text-content p {
 }
 
 .projects {
-  font-size: 20px;
-  font-family: futura-pt, sans-serif;
-  line-height: 30px;
-  font-weight: bold;
-  padding-top: 2em;
   display: flex;
   justify-content: center;
 }
 
 .projects a {
-  color: red;
-  text-decoration: none;
-}
-
-.mobileprojects {
   font-size: 20px;
   font-family: futura-pt, sans-serif;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 500;
+  padding-top: 2em;
+  color: #383838;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: #f8adb1;
+}
+
+.mobileprojects {
+  font-size: 18px;
+  font-family: futura-pt, sans-serif;
+  line-height: 30px;
+  font-weight: 500;
   padding-top: 2em;
   display: flex;
   justify-content: center;
 }
 
 .mobileprojects a {
-  color: red;
+  color: #383838;
   text-decoration: none;
 }
 
@@ -607,7 +622,6 @@ span.text-content p {
 }
 
 .lefttext a span:hover {
-  border-bottom: 3px solid #f8adb1;
   color: #f8adb1;
 }
 
@@ -629,9 +643,10 @@ span.text-content p {
   top: 50%;
   margin-left: 1em;
   font-size: 20px;
+  line-height: 30px;
   font-family: futura-pt, sans-serif;
-  font-weight: bold;
-  color: #FF0000;
+  font-weight: 500;
+  color: #383838;
   /* Rotate Text */
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -646,9 +661,10 @@ span.text-content p {
   top: 50%;
   margin-left: 0.5em;
   font-size: 20px;
+  line-height: 30px;
   font-family: futura-pt, sans-serif;
-  font-weight: bold;
-  color: #FF0000;
+  font-weight: 500;
+  color: #383838;
   /* Rotate Text */
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -657,6 +673,8 @@ span.text-content p {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+
+
 .about {
   position: absolute;
   position: fixed;
@@ -664,9 +682,11 @@ span.text-content p {
   margin-right: -1em;
   right: 0;
   font-size: 20px;
+  line-height: 30px;
   font-family: futura-pt, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
+  color: #383838;
   /* Rotate Text */
   -webkit-transform: rotate(-270deg);
   -moz-transform: rotate(-270deg);
@@ -676,8 +696,12 @@ span.text-content p {
 }
 
 .about a {
-  color: #FF0000;
+  color: #383838;
   text-decoration: none;
+}
+
+.about a:hover {
+  color: #f8adb1;
 }
 
 .titletop {
@@ -685,16 +709,20 @@ span.text-content p {
   top: 90px;
   left: 0;
   margin-left: 3em;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-family: futura-pt, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: underline;
 }
 
 .titletop a {
-  color: #FF0000;
+  color: #383838;
   text-decoration: none;
+}
+
+.titletop a:hover {
+  color: #f8adb1;
 }
 
 .abouttop {
@@ -702,16 +730,20 @@ span.text-content p {
   top: 90px;
   right: 0;
   margin-right: 3em;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-family: futura-pt, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .abouttop a {
-  color: #FF0000;
+  color: #383838;
   text-decoration: none;
+}
+
+.abouttop a:hover {
+  color: #f8adb1;
 }
 
 .abouttopcenter {
@@ -719,16 +751,20 @@ span.text-content p {
   top: 90px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-family: futura-pt, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .abouttopcenter a {
-  color: #FF0000;
+  color: #383838;
   text-decoration: none;
+}
+
+.abouttopcenter a:hover {
+  color: #f8adb1;
 }
 
 /* ==================== MEDIA QUERIES ===================== */
@@ -754,11 +790,6 @@ span.text-content p {
     display: none;
   }
 
-  .projects {
-  
-  }
-
-  
   .mobileprojects {
     display: none;
   }
@@ -828,7 +859,8 @@ span.text-content p {
     "header"
     "hero"
     "portfolio"
-    "aboutus";
+    "aboutus"
+    "copyright";
   }
    
   /* Home about section */
@@ -864,6 +896,7 @@ span.text-content p {
 
   .nexttext {
     width: 80vw;
+    margin-bottom: 2em;
   }
 
   /* Portfolio item image page */
@@ -927,6 +960,9 @@ span.text-content p {
     margin-left: 0em; 
   }
 
+  .projects a{
+    font-size: 18px;
+  }
 }
 
 /* Mobile */
@@ -1114,7 +1150,7 @@ and (orientation : landscape) {
   }
 
   .leadtext {
-    margin-top: 45vh;
+    margin-top: 40vh;
   }
 }
 
