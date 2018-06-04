@@ -616,6 +616,15 @@ span.text-content p {
   font-family: futura-pt, sans-serif;
 }
 
+.lefttext a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lefttext a span:hover {
+  color: #f8adb1;
+}
+
 .leadtext a {
   text-decoration: none;
   color: inherit;
