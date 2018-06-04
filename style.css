@@ -365,6 +365,11 @@ span.text-content p {
   margin-bottom: 20vh;
 }
 
+#aboutme {
+  margin-top: -10vh;
+  padding-top: 10vh;
+}
+
 .leadtext {
   grid-area: leadtext;
   width: 60vw;
