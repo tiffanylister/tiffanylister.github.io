@@ -889,6 +889,11 @@ span.text-content p {
       "lefttext";
   }
 
+  #aboutme {
+    margin-top: -15vh;
+    padding-top: 16vh;
+  }
+
   .headertext {
     width: 80vw;
     font-size: 50px;
@@ -1041,6 +1046,11 @@ span.text-content p {
       "toptext"
       "nexttext" 
       "lefttext";
+  }
+
+  #aboutme {
+    margin-top: -15vh;
+    padding-top: 16vh;
   }
 
   .headertext {
