@@ -633,11 +633,12 @@ span.text-content p {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
-  border-bottom: 3px solid #f8adb1;
+  border-bottom: 3px solid #383838;
 }
 
 .leadtext a:hover {
   color: #f8adb1;
+  border-bottom-color: #f8adb1;
 }
 
 .righttext a {
