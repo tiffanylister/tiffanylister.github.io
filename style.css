@@ -633,6 +633,7 @@ span.text-content p {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  border-bottom: 3px solid #f8adb1;
 }
 
 .leadtext a:hover {
