@@ -50,6 +50,10 @@ body {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 /* ================== HOME PAGE GRID =================== */
 
 .container {
@@ -178,6 +182,13 @@ body {
   right: 0; 
   top: 50%;
   transform: translateY(-50%);
+}
+
+.destination {
+    position:absolute;
+    z-index:-1;
+    left:0;
+    margin-top:-75px;
 }
 
 /* MOBILE NAV */
@@ -691,7 +702,7 @@ video {
   position: absolute;   
   position: fixed;
   top: 50%;
-  margin-left: 0.5em;
+  margin-left: 1em;
   font-size: 20px;
   line-height: 30px;
   font-family: futura-pt, sans-serif;
@@ -705,7 +716,21 @@ video {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
+.longtextpos {
+  left: -1.5em;
+}
 
+.illustrationtextpos {
+  left: -1em;
+}
+
+.tattootextpos {
+  left: -1.3em;
+}
+
+.pridetextpos {
+  left: -3.7em;
+}
 
 .about {
   position: absolute;
@@ -733,6 +758,35 @@ video {
 }
 
 .about a:hover {
+  color: #f8adb1;
+}
+
+.aboutproject {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  margin-right: 0.3em;
+  right: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #383838;
+  /* Rotate Text */
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.aboutproject a {
+  color: #383838;
+  text-decoration: none;
+}
+
+.aboutproject a:hover {
   color: #f8adb1;
 }
 
@@ -968,6 +1022,10 @@ video {
     display: none;
   }
 
+  .aboutproject {
+    display: none;
+  }
+
   /* Portfolio item about page */
 
   #content {
@@ -1124,6 +1182,10 @@ video {
     display: none;
   }
 
+  .aboutproject {
+    display: none;
+  }
+
   .titletop {
     margin-left: 2em;
   }
@@ -1183,11 +1245,23 @@ and (orientation : landscape) {
  }
 
   .leadtext {
-    margin-top: 30vh;
+    margin-top: 3em;
+  }
+
+  #content {
+    margin-top: 0px;
+  }
+
+  .aboutitemgrid {
+    margin-top: 35px;
   }
 
   .contentimages {
     padding-top: 3em;
+  }
+
+  .mobileprojects{
+    padding-top: 6em;
   }
 
 }
