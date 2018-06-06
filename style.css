@@ -620,6 +620,13 @@ span.text-content p {
   font-family: futura-pt, sans-serif;
 }
 
+video {
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 2em;
+  width: 100%;
+}
+
 .lefttext a {
   text-decoration: none;
   color: inherit;
@@ -863,6 +870,10 @@ span.text-content p {
   .illustrations {
     width: 100%;
   }
+
+  video {
+    height: 400px;
+  }
   
 
   /* container */
@@ -1036,6 +1047,10 @@ span.text-content p {
 
   .illustrations {
     width: 100%;
+  }
+
+  video {
+    height: 200px;
   }
 
   /* Home about section */
