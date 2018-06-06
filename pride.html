@@ -15,6 +15,13 @@
   <!-- Smooth Scroll -->
   <script src="assets/js/smoothscroll.js"></script>
 
+  <!-- Lazy Load -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+
   <!-- Overlay Transition -->
   <script>
     function openNav() {
@@ -76,13 +83,13 @@
 
     <div class="contentimages">
       <ul>
-        <li><img src="assets/images/SFP-WP-1.jpg" alt="pride"></li>
-        <li><img src="assets/images/SFP-WP-2.jpg" alt="pride"></li>
-        <li><img src="assets/images/SFP-WP-3.jpg" alt="pride"></li>
-        <li><img src="assets/images/SFP-WP-4.jpg" alt="pride"></li>
-        <li><img src="assets/images/SFP-WP-5.jpg" alt="pride"></li>
-        <li><img src="assets/images/SFP-WP-6.jpg" alt="pride"></li>
-        <li><img src="assets/images/SFP-WP-7.jpg" alt="pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-1.jpg" alt="Pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-2.jpg" alt="Pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-3.jpg" alt="Pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-4.jpg" alt="Pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-5.jpg" alt="Pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-6.jpg" alt="Pride"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/SFP-WP-7.jpg" alt="Pride"></li>
         <li><span class="projects"><a href="index.html#pride">back to portfolio</a></span></li>
       </ul>
     </div>
@@ -94,6 +101,14 @@
 <section id="copyright">
   Copyright &copy; 2018 Tiffany Lister. All Rights Reserved.
 </section>
+
+<!-- Lazy Load -->
+ 
+<script>
+    $(function() {
+        $('.lazy').lazy();
+    });
+</script>
 
 </body>
 </html>

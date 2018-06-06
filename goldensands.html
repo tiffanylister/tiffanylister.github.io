@@ -15,6 +15,13 @@
   <!-- Smooth Scroll -->
   <script src="assets/js/smoothscroll.js"></script>
 
+  <!-- Lazy Load -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+
   <!-- Overlay Transition -->
   <script>
     function openNav() {
@@ -77,12 +84,12 @@
 
     <div class="contentimages">
       <ul>
-        <li><img src="assets/images/GOLDENSANDS-WP-1.jpg" alt="Golden Sands"></li>
-        <li><img src="assets/images/GOLDENSANDS-WP-2.jpg" alt="Golden Sands"></li>
-        <li><img src="assets/images/GOLDENSANDS-WP-3.jpg" alt="Golden Sands"></li>
-        <li><img src="assets/images/GOLDENSANDS-WP-4.jpg" alt="Golden Sands"></li>
-        <li><img src="assets/images/GOLDENSANDS-WP-5.jpg" alt="Golden Sands"></li>
-        <li><img src="assets/images/GOLDENSANDS-WP-6.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-1.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-2.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-3.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-4.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-5.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-6.jpg" alt="Golden Sands"></li>
         <li><span class="projects"><a href="index.html#goa">back to portfolio</a></span></li>
       </ul>
     </div>
@@ -94,6 +101,14 @@
 <section id="copyright">
   Copyright &copy; 2018 Tiffany Lister. All Rights Reserved.
 </section>
+
+<!-- Lazy Load -->
+ 
+<script>
+    $(function() {
+        $('.lazy').lazy();
+    });
+</script>
 
 </body>
 </html>

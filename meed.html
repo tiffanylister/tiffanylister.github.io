@@ -15,6 +15,13 @@
   <!-- Smooth Scroll -->
   <script src="assets/js/smoothscroll.js"></script>
 
+  <!-- Lazy Load -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+
   <!-- Overlay Transition -->
   <script>
     function openNav() {
@@ -77,15 +84,15 @@
 
     <div class="contentimages">
       <ul>
-        <li><img src="assets/images/MEED-WP-1.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-2.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-3.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-4.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-5.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-6.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-7.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-8.jpg" alt="meed"></li>
-        <li><img src="assets/images/MEED-WP-9.jpg" alt="meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-1.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-2.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-3.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-4.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-5.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-6.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-7.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-8.jpg" alt="Meed"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/MEED-WP-9.jpg" alt="Meed"></li>
         <li><span class="projects"><a href="index.html#meed">back to portfolio</a></span></li>
       </ul>
     </div>
@@ -97,6 +104,14 @@
 <section id="copyright">
   Copyright &copy; 2018 Tiffany Lister. All Rights Reserved.
 </section>
+
+<!-- Lazy Load -->
+ 
+<script>
+    $(function() {
+        $('.lazy').lazy();
+    });
+</script>
 
 </body>
 </html>

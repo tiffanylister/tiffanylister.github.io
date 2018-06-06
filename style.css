@@ -476,7 +476,7 @@ span.text-content p {
   align-items: center;
   font-size: 14px;
   font-family: futura-pt, sans-serif;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 /* ============ PROJECT IMAGE PAGES ============ */
@@ -562,6 +562,15 @@ span.text-content p {
   height: auto;
 }
 
+/* Lazy Loading placeholder resize */
+
+.contentimages img[src*="spinner"]{
+  width: 100px;
+  height: auto;
+  display:block;
+  margin:auto;
+}
+
 .projects {
   display: flex;
   justify-content: center;
@@ -611,7 +620,7 @@ span.text-content p {
   grid-area: aboutcontent;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh;
+  grid-template-rows: 95vh;
   grid-template-areas:
     "leadtext";
   grid-column-gap: 1em;
