@@ -133,8 +133,8 @@ html, body {
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   color: #383838;
   margin-left: 2em;
 }
@@ -221,7 +221,7 @@ html, body {
 }
 
 .overlay a {
-  padding: 18px;
+  padding: 1.125rem;
   text-decoration: none;
   font-family: futura-pt, sans-serif;
   font-size: 2.250em;
@@ -337,11 +337,11 @@ html, body {
 
 span.text-content {
   color: #FFF;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.875rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -353,7 +353,7 @@ span.text-content {
 }
 
 span.text-content p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* ================== ABOUT US SECTION =================== */
@@ -383,8 +383,8 @@ span.text-content p {
 .leadtext {
   grid-area: leadtext;
   width: 60vw;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   align-self: center;
 }
 
@@ -396,7 +396,7 @@ span.text-content p {
   margin-top: 30vh;
   margin-bottom: 30vh;
   margin-left: 1em;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 500;
   color: #383838;
   line-height: 90px;
@@ -450,8 +450,8 @@ span.text-content p {
 .lefttext {
   grid-area: lefttext;
   width: 60vw;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-weight: 500;
   text-align: center;
   margin-top: 2em;
@@ -460,22 +460,22 @@ span.text-content p {
 .righttext {
   grid-area: righttext;
   width: 30vw;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 .toptext {
   grid-area: toptext;
   width: 30vw;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 .nexttext {
   grid-area: nexttext;
   width: 30vw;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 #copyright {
@@ -485,7 +485,7 @@ span.text-content p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: futura-pt, sans-serif;
   padding-bottom: 1em;
 }
@@ -520,8 +520,8 @@ span.text-content p {
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   color: #383838;
   margin-left: 2em;
 }
@@ -588,9 +588,9 @@ span.text-content p {
 }
 
 .projects a {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: futura-pt, sans-serif;
-  line-height: 30px;
+  line-height: 1.875rem;
   font-weight: 500;
   padding-top: 2em;
   color: #383838;
@@ -602,9 +602,9 @@ span.text-content p {
 }
 
 .mobileprojects {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: futura-pt, sans-serif;
-  line-height: 30px;
+  line-height: 1.875rem;
   font-weight: 500;
   padding-top: 2em;
   display: flex;
@@ -685,8 +685,8 @@ video {
   position: fixed;
   top: 50%;
   margin-left: 1em;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   color: #383838;
@@ -703,8 +703,8 @@ video {
   position: fixed;
   top: 50%;
   margin-left: 1em;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   color: #383838;
@@ -738,8 +738,8 @@ video {
   top: 50%;
   margin-right: -1em;
   right: 0;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -767,8 +767,8 @@ video {
   top: 50%;
   margin-right: 0.3em;
   right: 0;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -795,8 +795,8 @@ video {
   top: 90px;
   left: 0;
   margin-left: 3em;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   text-decoration: underline;
@@ -816,8 +816,8 @@ video {
   top: 90px;
   right: 0;
   margin-right: 3em;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -837,8 +837,8 @@ video {
   top: 90px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -971,7 +971,7 @@ video {
 
   .headertext {
     width: 80vw;
-    font-size: 50px;
+    font-size: 3.125rem;
     line-height: 70px;
     top: 40%;
  }
@@ -997,13 +997,13 @@ video {
   /* Portfolio item image page */
 
   .projects a{
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
 
   .mobileprojects a{
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
 
   #images {
@@ -1055,12 +1055,12 @@ video {
   }
 
   .abouttitle {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-left: 0em; 
   }
 
   .projects a{
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -1138,8 +1138,8 @@ video {
 
   .headertext {
     width: 90vw;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
     margin-left: 1em;
  }
 
@@ -1162,8 +1162,8 @@ video {
   }
 
   .mobileprojects {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 
   #images {
@@ -1224,7 +1224,7 @@ video {
   }
 
   .abouttitle {
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 0em; 
   }
 
@@ -1239,8 +1239,8 @@ and (orientation : landscape) {
 
   .headertext {
     width: 70vw;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
     top: 35%;
  }
 
