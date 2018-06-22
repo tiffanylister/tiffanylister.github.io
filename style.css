@@ -571,8 +571,13 @@ span.text-content p {
 .contentimages img{
   width: 100%;
   height: auto;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
+.contentimages img[data-src] {
+  opacity: 0;
+}
 /* Lazy Loading placeholder resize */
 
 .contentimages img[src*="spinner"]{
